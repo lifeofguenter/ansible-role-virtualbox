@@ -6,8 +6,10 @@
     url: "{{ item.url }}"
     state: present
   with_items:
-    - { id: 2980AECF, url: https://www.virtualbox.org/download/oracle_vbox_2016.asc }
-    - { id: 98AB5139, url: https://www.virtualbox.org/download/oracle_vbox.asc }
+    - id: 2980AECF
+      url: https://www.virtualbox.org/download/oracle_vbox_2016.asc
+    - id: 98AB5139
+      url: https://www.virtualbox.org/download/oracle_vbox.asc
   become: yes
 
 - name: add virtualbox repo
