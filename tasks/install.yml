@@ -9,7 +9,7 @@
 
 - name: add virtualbox repo
   apt_repository:
-    repo: "deb http://download.virtualbox.org/virtualbox/{{ ansible_distribution | lower }} {{ ansible_distribution_release }} contrib"
+    repo: "deb http://download.virtualbox.org/virtualbox/debian {{ ansible_distribution_release }} contrib"
     state: present
     update_cache: yes
   become: yes
