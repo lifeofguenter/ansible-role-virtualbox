@@ -5,8 +5,6 @@
     url: http://download.virtualbox.org/virtualbox/{{ vbox_version }}/Oracle_VM_VirtualBox_Extension_Pack-{{ vbox_version }}-{{ vbox_build }}.vbox-extpack
     dest: /tmp/Oracle_VM_VirtualBox_Extension_Pack-{{ vbox_version }}-{{ vbox_build }}.vbox-extpack
     mode: 0664
-  become: yes
-  become_user: vbox
 
 - name: install extpack
   command: VBoxManage extpack install --replace /tmp/Oracle_VM_VirtualBox_Extension_Pack-{{ vbox_version }}-{{ vbox_build }}.vbox-extpack --accept-license={{ vbox_accept_license }}
