@@ -12,6 +12,13 @@ none
 
 ```yaml
 
+vbox_version: 5.1.30
+
+vbox_build: 118389
+
+# tar xf Oracle_VM_VirtualBox_Extension_Pack-5.1.30-118389.vbox-extpack
+# openssl sha -sha256 ExtPack-license.txt
+vbox_accept_license: b674970f720eb020ad18926a9268607089cc1703908696d24a04aa870f34c8e8
 
 ```
 
@@ -23,7 +30,7 @@ none
 
 ```yaml
 
-- hosts: xmpp
+- hosts: virtualbox-hosts
   roles:
     - { role: lifeofguenter.virtualbox }
 ```

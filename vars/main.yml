@@ -1,0 +1,3 @@
+---
+
+vbox_major_minor_version: "{{ vbox_version.split('.')[0] }}.{{ vbox_version.split('.')[1] }}"
