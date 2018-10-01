@@ -1,5 +1,11 @@
 ---
 
-- include_tasks: install.yml
+- import_tasks: install.yml
 
-- include_tasks: setup.yml
+- name: check extpacks
+  command: VBoxManage list extpacks
+  ignore_errors: yes
+  register: vbox_list_extpacks
+
+- import_tasks: setup.yml
+  when: vbox_list_extpacks is failed or not vbox_list_extpacks.stdout is search(vbox_version_string_match)
