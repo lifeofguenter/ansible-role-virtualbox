@@ -21,12 +21,11 @@ none
 
 ```yaml
 
-vbox_version: 5.1.38
+vbox_version: 5.2.18
 
-# tar xf Oracle_VM_VirtualBox_Extension_Pack-5.1.38.vbox-extpack
+# tar xf Oracle_VM_VirtualBox_Extension_Pack-5.2.18.vbox-extpack
 # openssl sha -sha256 ExtPack-license.txt
-vbox_accept_license: b674970f720eb020ad18926a9268607089cc1703908696d24a04aa870f34c8e8
-
+vbox_accept_license: 56be48f923303c8cababb0bb4c478284b688ed23f16d775d729b89a2e8e5f9eb
 ```
 
 ## Dependencies
