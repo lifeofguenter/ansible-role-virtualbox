@@ -1,3 +1,5 @@
 ---
 
 vbox_major_minor_version: "{{ vbox_version.split('.')[0] }}.{{ vbox_version.split('.')[1] }}"
+
+vbox_version_string_match: "Version:\\s*{{ vbox_version }}\n"
